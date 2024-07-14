@@ -51,7 +51,7 @@ export default function Home() {
                 const result = customer.find((c) => c.id === t.customer_id);
                 return {
                     id: t.id,
-                    name: result ? result.name : "Unknown",
+                    name: result.name ,
                     amount: t.amount,
                     date: t.date
                 };
